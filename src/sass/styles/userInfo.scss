@@ -1,0 +1,32 @@
+.userInfo {}
+
+.infoInputs {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+
+	// .infoInputs__item
+
+	&__item {
+		width: 100%;
+		max-width: 460px;
+	}
+
+	// .infoInputs__item-input
+
+	&__item-input {
+		padding: 20px 20px 20px 50px;
+	}
+}
+
+.about {
+
+	// .about__item
+	&__item {
+		width: 100%;
+		max-width: 930px;
+		border: 1px solid $lightgray;
+		padding: 20px 30px;
+	}
+}

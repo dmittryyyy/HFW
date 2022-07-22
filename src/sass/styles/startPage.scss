@@ -11,13 +11,13 @@
         justify-content: space-between;
         max-width: 960px;
         max-height: 940px;
-        background: url("../../img/header/bg.jpeg") center / cover no-repeat;
+        background: url("../../img/startPage/bg.jpeg") center / cover no-repeat;
 
         &__itemLeft {
             margin-left: 106px;
             display: flex;
             flex-direction: column;
-            justify-content: end;
+            justify-content: flex-end;
             margin-bottom: 60px;
 
             &-absolute {
@@ -54,6 +54,7 @@
 
         &__button {
             max-width: fit-content;
+            padding: 18px 30px;
 
             svg {
                 transition: .3s all ease;

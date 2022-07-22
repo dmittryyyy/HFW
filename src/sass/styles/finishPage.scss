@@ -1,0 +1,36 @@
+.finishPage {
+    display: none;
+    // .finishPage__img
+
+    &__img {
+        margin-bottom: 40px;
+    }
+
+    // .finishPage__titleText
+
+    &__titleText {
+        margin-bottom: 40px;
+    }
+
+    // .finishPage__subtitle
+
+    &__subtitle {
+        margin-bottom: 60px;
+    }
+
+    &__subtitle-title {
+        margin-bottom: 10px;
+    }
+
+    // .finishPage__text
+
+    &__text {
+        margin-bottom: 10px;
+    }
+
+    .link {
+        align-items: center;
+        padding: 14px 48px;
+    }
+
+}
