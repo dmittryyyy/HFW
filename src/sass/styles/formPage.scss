@@ -1,7 +1,3 @@
-.info__logo {
-    max-width: 200px;
-}
-
 .forms {
     margin-top: 40px;
 
@@ -12,6 +8,7 @@
 
 .steps {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     max-width: 650px;
@@ -26,11 +23,19 @@
         height: 2px;
         background: $lightgray;
         z-index: -1;
+        transition: .6s all ease;
     }
 
     // .steps__chain-success
 
     &__chain-success {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2px;
+        background: $pink;
+        z-index: -1;
+        transition: .6s all ease;
     }
 
     // .steps__item
@@ -43,10 +48,19 @@
         height: 50px;
         border-radius: 100%;
         border: 2px solid $lightgray;
-        margin-right: 100px;
-        padding: 12px;
         flex-shrink: 0;
         background: $white;
+        transition: 1s all ease;
+
+        &_active {
+            background: $pink;
+            border: transparent;
+            transition: 1s all ease;
+
+            svg {
+                fill: $white;
+            }
+        }
     }
 }
 
@@ -72,7 +86,7 @@
     &__step {
         display: none;
 
-        &.active {
+        &_active {
             display: block;
         }
     }

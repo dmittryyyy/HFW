@@ -1,3 +1,12 @@
+.logo {
+    margin-bottom: 60px;
+    // .logo__img
+
+    &__img {
+        max-width: 200px;
+    }
+}
+
 .titleText {
     &__title {
         font-style: normal;
@@ -14,16 +23,17 @@
         font-size: 20px;
         line-height: 22px;
         color: $gray;
+        max-width: 600px;
     }
 }
 
 .subTitle {
     &__title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 28px;
-    color: $black;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 28px;
+        color: $black;
     }
 }
 
@@ -41,53 +51,40 @@
         font-size: 22px;
         line-height: 24px;
         padding: 18px 48px;
-        transition: .3s all ease;
-        cursor: pointer;
         border: none;
-
-        &:hover {
-            background-color: rgb(240, 119, 139);
-            transition: .3s all ease;
-        }
-    }
-
-    // .buttons__btn_outline
-    &__btn_outline {
-        background-color: $white;
-        color: $black;
-        border: 1px solid $lightgray;
         transition: .3s all ease;
-        padding: 18px 48px;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 24px;
         cursor: pointer;
 
         &:hover {
-            background-color: $orange;
-            color: $white;
+            background-color: $darkPink;
             transition: .3s all ease;
         }
+
+
+        // .buttons__btn_outline
+        &_outline {
+            background-color: $white;
+            color: $black;
+            border: 1px solid $lightgray;
+
+            &:hover {
+                background-color: $orange;
+                color: $white;
+                transition: .3s all ease;
+            }
+        }
+
+        &_finish {
+            display: none;
+            align-items: center;
+            padding: 14px 48px;
+
+            img {
+                margin-right: 10px;
+            }
+        }
     }
-
-    // .buttons__prev
-
-    &__prev {}
-
-    // .buttons__next
-
-    &__next {}
 }
-
-.finishPage {
-
-    // .finishPage__btn
-
-    &__btn {
-        display: none;
-    }
-}
-
 
 .inputForm {
     position: relative;
@@ -103,6 +100,7 @@
         font-size: 18px;
         line-height: 20px;
         padding: 20px 20px 20px 20px;
+
         &:focus {
             outline: 1px solid $orange;
         }

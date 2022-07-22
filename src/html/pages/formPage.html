@@ -1,8 +1,10 @@
 <main>
-    <img class="info__logo" src="img/logo.png" alt="Логотип">
+    <div class="logo">
+        <img class="logo__img" src="img/logo.png" alt="Логотип">
+    </div>
 
     <form class="forms">
-
+        
         <div class="steps">
             <div class="steps__chain">
                 <div class="steps__chain-success"></div>
@@ -15,8 +17,7 @@
             <div class="steps__item">
                 <svg width="24" height="24" viewBox="0 0 64 64" fill="#B3B4BA" xmlns="http://www.w3.org/2000/svg">
                     <path
-                        d="M25.459 17C25.2605 17 25.082 17.1655 25.082 17.3913V19.1739H38.2295V17.3913C38.2295 17.1655 38.051 17 37.8525 17H25.459ZM40.2295 19.1739V17.3913C40.2295 16.0804 39.175 15 37.8525 15H25.459C24.1365 15 23.082 16.0804 23.082 17.3913V19.1739H11C10.4477 19.1739 10 19.6216 10 20.1739V46.6087C10 47.9196 11.0546 49 12.377 49H51.623C52.9454 49 54 47.9196 54 46.6087V20.1739C54 19.6216 53.5523 19.1739 53 19.1739H40.2295ZM12 24.7238V46.6087C12 46.8345 12.1785 47 12.377 47H51.623C51.8215 47 52 46.8345 52 46.6087V24.7238L49.459 30.2251C49.0711 31.065 48.2326 31.6087 47.3033 31.6087H37.4754V35.4783C37.4754 36.7892 36.4209 37.8696 35.0984 37.8696H29.5902C28.2677 37.8696 27.2131 36.7892 27.2131 35.4783V31.6087H16.6967C15.7674 31.6087 14.9289 31.065 14.541 30.2251L12 24.7238ZM27.2131 29.6087V28.5217C27.2131 27.2108 28.2677 26.1304 29.5902 26.1304H35.0984C36.4209 26.1304 37.4754 27.2108 37.4754 28.5217V29.6087H47.3033C47.4441 29.6087 47.5788 29.5262 47.6434 29.3864L51.4366 21.1739H12.5634L16.3566 29.3864C16.4212 29.5262 16.5559 29.6087 16.6967 29.6087H27.2131ZM29.5902 28.1304C29.3916 28.1304 29.2131 28.2959 29.2131 28.5217V35.4783C29.2131 35.7041 29.3916 35.8696 29.5902 35.8696H35.0984C35.2969 35.8696 35.4754 35.7041 35.4754 35.4783V28.5217C35.4754 28.2959 35.2969 28.1304 35.0984 28.1304H29.5902Z"
-                        fill="#B3B4BA" />
+                        d="M25.459 17C25.2605 17 25.082 17.1655 25.082 17.3913V19.1739H38.2295V17.3913C38.2295 17.1655 38.051 17 37.8525 17H25.459ZM40.2295 19.1739V17.3913C40.2295 16.0804 39.175 15 37.8525 15H25.459C24.1365 15 23.082 16.0804 23.082 17.3913V19.1739H11C10.4477 19.1739 10 19.6216 10 20.1739V46.6087C10 47.9196 11.0546 49 12.377 49H51.623C52.9454 49 54 47.9196 54 46.6087V20.1739C54 19.6216 53.5523 19.1739 53 19.1739H40.2295ZM12 24.7238V46.6087C12 46.8345 12.1785 47 12.377 47H51.623C51.8215 47 52 46.8345 52 46.6087V24.7238L49.459 30.2251C49.0711 31.065 48.2326 31.6087 47.3033 31.6087H37.4754V35.4783C37.4754 36.7892 36.4209 37.8696 35.0984 37.8696H29.5902C28.2677 37.8696 27.2131 36.7892 27.2131 35.4783V31.6087H16.6967C15.7674 31.6087 14.9289 31.065 14.541 30.2251L12 24.7238ZM27.2131 29.6087V28.5217C27.2131 27.2108 28.2677 26.1304 29.5902 26.1304H35.0984C36.4209 26.1304 37.4754 27.2108 37.4754 28.5217V29.6087H47.3033C47.4441 29.6087 47.5788 29.5262 47.6434 29.3864L51.4366 21.1739H12.5634L16.3566 29.3864C16.4212 29.5262 16.5559 29.6087 16.6967 29.6087H27.2131ZM29.5902 28.1304C29.3916 28.1304 29.2131 28.2959 29.2131 28.5217V35.4783C29.2131 35.7041 29.3916 35.8696 29.5902 35.8696H35.0984C35.2969 35.8696 35.4754 35.7041 35.4754 35.4783V28.5217C35.4754 28.2959 35.2969 28.1304 35.0984 28.1304H29.5902Z"/>
                 </svg>
             </div>
             <div class="steps__item"><svg width="24" height="24" viewBox="0 0 24 24" fill="#B3B4BA"
@@ -115,86 +116,86 @@
                     <div class="list">
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/buisnes.png" alt="Иконка"></div>
                             <div class="list__item-name">Развитие бизнеса</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/creation.png" alt="Иконка"></div>
                             <div class="list__item-name">Творчество</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/design.png" alt="Иконка"></div>
                             <div class="list__item-name">Дизайн</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/develop.png" alt="Иконка"></div>
                             <div class="list__item-name">Разработка</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/education.png" alt="Иконка"></div>
                             <div class="list__item-name">Обучение</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/friends.png" alt="Иконка"></div>
                             <div class="list__item-name">Поиск единомышленников</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/invest.png" alt="Иконка"></div>
                             <div class="list__item-name">Инветирование</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/mentor.png" alt="Иконка"></div>
                             <div class="list__item-name">Менторство</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/organizeEvents.png" alt="Иконка"></div>
                             <div class="list__item-name">Организация мероприятий</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/searchFinance.png" alt="Иконка"></div>
                             <div class="list__item-name">Поиск финансирования</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/skill.png" alt="Иконка"></div>
                             <div class="list__item-name">Повышение квалификации</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                         <label class="list__item">
                             <input type="checkbox" class="list__item-checkbox" name="check">
-                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-img"><img src="img/form/objectives/startCompany.png" alt="Иконка"></div>
                             <div class="list__item-name">Открытие компании</div>
+                            <div class="list__item-fakeCheck" for="check"></div>
                             <div class="list__item-border"></div>
                         </label>
                     </div>
@@ -424,32 +425,32 @@
                 </div>
             </div>
         </div>
-
-        <div class="finishPage">
-            <div class="finishPage__img">
-                <img src="img/finishPage/logoGoogle.png" alt="Google">
-            </div>
-            <div class="titleText finishPage__titleText">
-                <h3 class="titleText__title">Завершение регистрации</h3>
-                <p class="titleText__text">Для более удобного использования платформы рекомендуем подключить свой Google
-                    аккаунт.</p>
-            </div>
-            <div class="finishPage__subtitle subTitle">
-                <h4 class="subTitle__title finishPage__subtitle-title">Зачем подключать мой Google аккаунт?</h4>
-                <p class="finishPage__text">Ваши контактные данные и данные календаря помогают нам планировать
-                    встречи и обеспечивать
-                    релевантность ваших совпадений
-                    (например, не сопоставлять вас с людьми, которых вы уже знаете).</p>
-                <p class="finishPage__text">Мы серьезно относимся к вашей конфиденциальности и никогда не
-                    будем передавать ваши личные
-                    данные другим пользователям или третьим лицам без вашего согласия.</p>
-            </div>
-        </div>
-
-        <div class="buttons">
-            <button class="buttons__btn_outline finishPage__btn"><img src="img/finishPage/googleBtn.svg" alt="Иконка">Завершить регистрацию в Google</button>
-            <button class="buttons__btn_outline buttons__prev">Назад</button>
-            <button class="buttons__btn buttons__next">Вперед</button>
-        </div>
     </form>
+
+    <div class="finishPage">
+        <div class="finishPage__img">
+            <img src="img/finishPage/logoGoogle.png" alt="Google">
+        </div>
+        <div class="titleText finishPage__titleText">
+            <h3 class="titleText__title">Завершение регистрации</h3>
+            <p class="titleText__text">Для более удобного использования платформы рекомендуем подключить свой Google
+                аккаунт.</p>
+        </div>
+        <div class="finishPage__subtitle subTitle">
+            <h4 class="subTitle__title finishPage__subtitle-title">Зачем подключать мой Google аккаунт?</h4>
+            <p class="finishPage__text">Ваши контактные данные и данные календаря помогают нам планировать
+                встречи и обеспечивать
+                релевантность ваших совпадений
+                (например, не сопоставлять вас с людьми, которых вы уже знаете).</p>
+            <p class="finishPage__text">Мы серьезно относимся к вашей конфиденциальности и никогда не
+                будем передавать ваши личные
+                данные другим пользователям или третьим лицам без вашего согласия.</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="buttons__btn buttons__btn_outline buttons__btn_finish"><img src="img/finishPage/googleBtn.svg" alt="Иконка">Завершить регистрацию в Google</button>
+        <button class="buttons__btn buttons__btn_outline buttons__prev">Назад</button>
+        <button class="buttons__btn buttons__next">Вперед</button>
+    </div>
 </main>
