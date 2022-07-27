@@ -1,9 +1,17 @@
+//breakpoints
+$max-width: 1440px;
+$min-width: 320px;
+$md1: $max-width + 12px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+
 //colors
 $black: #000;
-$pink: #f7a4ab;
-$darkPink: rgb(241, 92, 117);
 $white: #FFFFFF;
 $gray: #747887;
+$pink: #f7a4ab;
+$darkPink: rgb(241, 92, 117);
 $lightgray: #E5E4E1;
 $lightblue: #F3F6F9; 
 $orange: #f88f57;

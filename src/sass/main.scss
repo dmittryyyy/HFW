@@ -1,11 +1,35 @@
 @import './global/global';
 @import './global/variables';
+
 @import './styles/bemBlock';
 @import './styles/startPage';
+@import './styles/progressSteps';
 @import './styles/formPage';
-@import './styles/formChooseInputs';
+@import './styles/location';
+@import './styles/objectives';
 @import './styles/profile';
 @import './styles/interestings';
 @import './styles/userInfo';
-@import './styles/finishPage';
+@import './styles/finishForm';
+
+._container {
+    max-width: $max-width;
+    margin: 0 auto;
+    width: 100%;
+    @media (max-width: $md1) {
+        max-width: $max-width;
+    }
+    @media (max-width: $md1) {
+        max-width: $max-width;
+    }
+    @media (max-width: $md2) {
+        max-width: 970px;
+    }
+    @media (max-width: $md3) {
+        max-width: 750px;
+    }
+    @media (max-width: $md4) {
+        max-width: 420px;
+    }
+}
 

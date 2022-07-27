@@ -1,0 +1,92 @@
+.objectives {
+
+    // .objectives__titleText
+
+    &__titleText {
+        margin-bottom: 20px;
+    }
+
+    // .objectives__subtitle
+
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+
+    // .objectives__listCheck
+
+    &__listCheck {
+
+        &__item {
+            padding: 20px;
+            max-width: 350px;
+
+            // .objectives__listCheck_checkbox
+            &_checkbox {
+                display: none;
+
+                &:checked+.objectives__listCheck__item_fakeCheck:after {
+                    opacity: 1;
+                }
+
+                &:checked~.listCheck__item-border {
+                    opacity: 1;
+                }
+            }
+
+            // .objectives__listCheck_fakeCheck
+            &_fakeCheck {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border: 2px solid $pink;
+                border-radius: 5px;
+                background-color: $white;
+                right: 25px;
+                cursor: pointer;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    background: $pink url('../img/form/objectives/selected.svg') no-repeat center;
+                    right: 0;
+                    bottom: 0;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $md3) {
+    .objectives {
+        &__listCheck {
+
+            &__item {
+                padding: 10px;
+                max-width: 215px;
+
+                // .objectives__listCheck_fakeCheck
+                &_fakeCheck {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid $pink;
+                    right: 5px;
+                }
+            }
+        }
+
+        .listCheck {
+            // .listCheck__item-img
+
+            &__item-img {
+                max-width: 30px;
+
+                img {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

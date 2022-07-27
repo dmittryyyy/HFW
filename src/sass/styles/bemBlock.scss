@@ -6,6 +6,17 @@
         max-width: 200px;
     }
 }
+@media (max-width: $md3) {
+    .logo {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: $md4) {
+    .logo {
+        justify-content: center;
+        display: flex;
+    }
+}
 
 .titleText {
     &__title {
@@ -27,6 +38,40 @@
     }
 }
 
+@media (max-width: $md2) {
+    .titleText {
+        &__title {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+}
+@media (max-width: $md3) {
+    .titleText {
+        &__title {
+            font-size: 38px;
+            line-height: 42px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: $min-width) {
+    .titleText {
+        text-align: center;
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+
 .subTitle {
     &__title {
         font-style: normal;
@@ -34,6 +79,113 @@
         font-size: 25px;
         line-height: 28px;
         color: $black;
+    }
+}
+@media (max-width: $md2) {
+    .subTitle {
+        &__title {
+            font-size: 22px;
+        }
+    }
+}
+@media (max-width: $md3) {
+    .subTitle {
+        &__title {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: $md4) {
+    .subTitle {
+        text-align: center;
+    }
+}
+
+.listCheck {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    // .listCheck__item
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background: $lightblue;
+        cursor: pointer;
+        border: none;
+    }
+
+    // .listCheck__item-name
+    &__item-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        color: $black;
+        max-width: 220px;
+    }
+
+    // .listCheck__item-img
+    &__item-img {
+        max-width: 60px;
+        margin-right: 10px;
+        background: $white;
+
+        img {
+            padding: 10px;
+        }
+    }
+
+    // .listCheck__item-border
+    &__item-border {
+        position: absolute;
+        border: 1px solid $orange;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+    }
+}
+@media (max-width: $md3) {
+    .listCheck {
+        gap: 10px;
+    
+        // .listCheck__item-name
+        &__item-name {
+            font-size: 18px;
+            max-width: 100px;
+        }
+    
+        // .listCheck__item-img
+        &__item-img {
+            max-width: 40px;
+            margin-right: 5px;
+    
+            img {
+                padding: 8px;
+            }
+        }
+    }
+}
+@media (max-width: $md4) {
+    .listCheck {
+        justify-content: center;
+    
+        // .listCheck__item-name
+        &__item-name {
+            font-size: 14px;
+        }
+    
+        // .listCheck__item-img
+        &__item-img {
+            max-width: 30px;
+    
+            img {
+                padding: 4px;
+            }
+        }
     }
 }
 
@@ -77,12 +229,53 @@
         &_finish {
             display: none;
             align-items: center;
-            padding: 14px 48px;
 
             img {
-                margin-right: 10px;
+                margin-left: 10px;
             }
         }
+    }
+}
+@media(max-width: $md2) {
+    .buttons {
+        // .buttons__btn
+    
+        &__btn {
+            font-size: 20px;
+            padding: 16px 40px;
+        }
+    }
+}
+@media(max-width: $md3) {
+    .buttons {
+        gap: 10px;
+        // .buttons__btn
+    
+        &__btn {
+    
+            &_finish {
+
+                img {
+                    max-width: 20px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: $md4) {
+    .buttons {
+        justify-content: center;
+        // .buttons__btn
+    
+        &__btn {
+            font-size: 18px;
+            padding: 16px 16px;
+        }
+    }
+}
+@media(max-width: ($min-width - 30px)) {
+    .buttons {
+        flex-direction: column;
     }
 }
 
@@ -96,10 +289,10 @@
     &__input {
         width: 100%;
         border: 1px solid $lightgray;
-        font-weight: 375;
+        font-weight: 400;
         font-size: 18px;
         line-height: 20px;
-        padding: 20px 20px 20px 20px;
+        padding: 20px;
 
         &:focus {
             outline: 1px solid $orange;
@@ -112,5 +305,14 @@
         max-width: 20px;
         position: absolute;
         left: 20px;
+    }
+}
+
+@media (max-width: $md4) {
+    .inputForm {
+        // .inputForm__input
+        &__input {
+            font-size: 16px;
+        }
     }
 }

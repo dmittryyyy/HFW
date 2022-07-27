@@ -1,0 +1,124 @@
+.location {
+
+    // .location__titleText
+
+    &__titleText {
+        margin-bottom: 20px;
+    }
+
+    // .location__inputForm
+
+    &__inputForm {
+        margin-bottom: 20px;
+    }
+
+    // .location__inputForm-input
+
+    &__inputForm-input {
+        padding: 20px 20px 20px 50px;
+    }
+
+    // .location__subtitle
+
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+
+    // .location__listCheck
+
+    &__listCheck {
+
+        &__item {
+            padding: 20px;
+            max-width: 350px;
+
+            &_radio {
+                display: none;
+
+                &:checked+.location__listCheck__item_fakeRadio::after {
+                    opacity: 1;
+                }
+
+                &:checked~.listCheck__item-border {
+                    opacity: 1;
+                }
+
+            }
+
+            &_fakeRadio {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                border: 2px solid $pink;
+                right: 25px;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background: $pink;
+                    border-radius: 100%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $md3) {
+    .location {
+        &__inputForm-input {
+            padding: 10px 10px 10px 50px;
+        }
+
+        &__listCheck {
+
+            &__item {
+                padding: 14px;
+                max-width: 215px;
+
+                &_fakeRadio {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid $pink;
+                    right: 10px;
+
+                    &::after {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $md4) {
+    .location {
+        &__listCheck {
+
+            &__item {
+                padding: 7px;
+                max-width: 170px;
+
+                &_fakeRadio {
+                    width: 14px;
+                    height: 14px;
+                    border: 1px solid $pink;
+                    right: 5px;
+
+                    &::after {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

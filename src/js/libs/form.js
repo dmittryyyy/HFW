@@ -6,6 +6,7 @@ const stepForm = () => {
     const steps = document.querySelectorAll('.steps__item');
     const prevBtn = document.querySelector('.buttons__prev');
     const nextBtn = document.querySelector('.buttons__next');
+    const completeBtn = document.querySelector('.buttons__complete');
     const finishContent = document.querySelector('.finishPage');
     const finishBtn = document.querySelector('.buttons__btn_finish');
 
@@ -40,9 +41,10 @@ const stepForm = () => {
         }
 
         if (formStep === stepContent.length - 1) {
-            nextBtn.innerHTML = 'Завершить';
+            nextBtn.style.display = 'none';
+            completeBtn.style.display = 'block';
 
-            nextBtn.addEventListener('click', () => {
+            completeBtn.addEventListener('click', () => {
                 form.style.display = 'none';
                 nextBtn.innerHTML = 'Просто завершить регистрацию';
                 prevBtn.style.display = 'none';
@@ -50,7 +52,8 @@ const stepForm = () => {
                 finishBtn.style.display = 'flex';
             });
         } else {
-            nextBtn.innerHTML = 'Вперед';
+            nextBtn.style.display = 'block';
+            completeBtn.style.display = 'none';
         }
 
         const lineProgress = document.querySelectorAll('.steps__item_active');

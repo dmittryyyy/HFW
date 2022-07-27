@@ -1,11 +1,19 @@
 .userInfo {}
 
+.infoUser {
+
+	// .infoUser__titleText
+
+	&__titleText {
+		margin-bottom: 40px;
+	}
+}
+
 .infoInputs {
 	display: flex;
 	gap: 10px;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
-
 	// .infoInputs__item
 
 	&__item {
@@ -23,10 +31,16 @@
 .about {
 
 	// .about__item
+
 	&__item {
 		width: 100%;
 		max-width: 930px;
 		border: 1px solid $lightgray;
 		padding: 20px 30px;
+		resize: none;
+
+		&:focus {
+			outline: 1px solid $orange;
+		}
 	}
 }
