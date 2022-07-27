@@ -14,4 +14,4 @@
 
 Сборка Gulp из моего репозитория, JS, HTML (БЭМ), SASS.
 
-<h3><a href="https://www.figma.com/file/m9TOWP5MwEasm73cfRcl1g/HFW-layout?node-id=0%3A1">Результат</a></h3>
+<h3><a href="https://dmittryyyy.github.io/HFW/">Результат</a></h3>
